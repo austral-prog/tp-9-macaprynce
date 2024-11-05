@@ -6,7 +6,6 @@ def create_inventory(items):
             my_dict[i] +=1
         else:    
             my_dict[i] = 1
-
     return my_dict
 
 def add_items(inventory, items):
@@ -15,7 +14,6 @@ def add_items(inventory, items):
             inventory[i] = 1
         else:
             inventory[i] += 1
-
     return inventory
 
 def decrement_items(inventory, items):
@@ -24,14 +22,12 @@ def decrement_items(inventory, items):
             inventory [i] = 0
         else: 
             inventory [i] -= 1
-    
     return inventory
 
 def remove_item(inventory, item):
     for i in inventory.keys():
         if i == item:
             del inventory[i]
-            break
     return inventory
 
 def list_inventory(inventory):
