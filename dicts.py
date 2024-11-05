@@ -1,12 +1,12 @@
-
 def create_inventory(items):
-    my_dict = dict()
+    mydict = dict()
     for i in items:
-        if i in my_dict:
-            my_dict[i] +=1
+        if i in mydict:
+            mydict[i] +=1
         else:    
-            my_dict[i] = 1
-    return my_dict
+            mydict[i] = 1
+
+    return mydict
 
 def add_items(inventory, items):
     for i in items:
@@ -14,6 +14,7 @@ def add_items(inventory, items):
             inventory[i] = 1
         else:
             inventory[i] += 1
+
     return inventory
 
 def decrement_items(inventory, items):
@@ -22,12 +23,14 @@ def decrement_items(inventory, items):
             inventory [i] = 0
         else: 
             inventory [i] -= 1
+    
     return inventory
 
 def remove_item(inventory, item):
     for i in inventory.keys():
         if i == item:
             del inventory[i]
+            break
     return inventory
 
 def list_inventory(inventory):
@@ -37,4 +40,3 @@ def list_inventory(inventory):
         my_tuple = (i,x)
         my_list.append(my_tuple)
     return my_list
-
