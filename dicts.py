@@ -1,13 +1,13 @@
 
 def create_inventory(items):
-    mydict = dict()
+    my_dict = dict()
     for i in items:
-        if i in mydict:
-            mydict[i] +=1
+        if i in my_dict:
+            my_dict[i] +=1
         else:    
-            mydict[i] = 1
+            my_dict[i] = 1
 
-    return mydict
+    return my_dict
 
 def add_items(inventory, items):
     for i in items:
